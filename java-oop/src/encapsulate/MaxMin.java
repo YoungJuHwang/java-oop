@@ -4,7 +4,7 @@ package encapsulate;
  * @file_name : MaxMin.java
  * @author    : pheonix0717@naver.com
  * @date      : 2015. 9. 22.
- * @story     : 최고점, 최저점 구하기.
+ * @story     : 최고점, 최저점 구하기. + 오름차순 정리.
  */
 public class MaxMin {
 	public int[] maxmin(int score[]){

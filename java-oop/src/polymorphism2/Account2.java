@@ -12,12 +12,24 @@ public class Account2 {
 	
 	Scanner scan = new Scanner(System.in);
 	
+	public Account2(){
+		this(0,"");
+		
+	}
+	public Account2(int a){
+		
+	}
+	public Account2(int a, String b){
+		
+	}
+	
 	public int getAccountNo() {
 		return this.accountNo;
 	}
 	public String getOwnerName() {
 		return ownerName;
 	}
+	
 	public String getPassword() {
 		return password;
 	}

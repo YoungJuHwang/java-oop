@@ -20,7 +20,6 @@ public class HanbitOffice {
 				String name = scan.next();
 				System.out.println("입금액 입력 : ");
 				int restMoney = scan.nextInt();
-				//adminService.openAccount(accountNo, name, restMoney);
 				System.out.println(adminService.openAccount(accountNo, name, restMoney));
 				System.out.println(adminService.getCount());
 				break;

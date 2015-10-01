@@ -16,8 +16,7 @@ public class BankService2 implements Bank2{
 	public int deposit(int input) {
 		if(input < 0){
 			return account2.getRestMoney();
-			//System.out.println("다시 입력하세요");
-		} else {
+			} else {
 			return account2.restMoney += input;
 		}
 		

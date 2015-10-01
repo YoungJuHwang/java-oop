@@ -3,7 +3,7 @@ package polymorphism2;
 public interface Admin {
 	
 	
-	public String openAccount(int accountNO, String name, int restMoney);
+	public String openAccount(String name, int restMoney);
 	
 	
 	public Account2 searchAccountByAccountNo(int accountNo);

@@ -14,7 +14,6 @@ public class Account2 {
 	
 	public Account2(){
 		this(0,"");
-		
 	}
 	public Account2(int a){
 		
@@ -37,8 +36,9 @@ public class Account2 {
 		return restMoney;
 	}
 	public void setAccountNo() {
-		this.accountNo = (int) (Math.random() * 1000000) + 100000;
+		this.accountNo = (int) (Math.random() * 999999) + 100000;
 	}
+	
 	public void setOwnerName(String name) {
 		
 		this.ownerName = name;
@@ -52,8 +52,8 @@ public class Account2 {
 	
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "입출금계좌\n"+BANK_NAME+"\n"+"계좌번호 : "+ accountNo
+		return "입출금계좌\n"+BANK_NAME+"\n"+"계좌번호 : "+ this.accountNo
 				+"\n"+"계좌명 : " + this.ownerName +"\n"+ "비밀번호 : *****" +"\n"+ 
-		"잔액 : "+this.restMoney;
+		"잔액 : "+this.restMoney + "\n";
 	}
 }

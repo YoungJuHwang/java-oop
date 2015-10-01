@@ -21,7 +21,7 @@ public class TV extends Product{
 		return "제조회사 : "+super.company+" \n "
 				+ "제품명 : "+super.name+" \n "
 				+ "고유번호 : "+super.serialNo+" \n "
-				+ "인치 : "+this.size+"30인치 \n "
+				+ "인치 : "+this.size+"\n "
 				+ "화면 : "+this.screen;
 	}
 

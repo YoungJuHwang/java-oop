@@ -107,16 +107,24 @@ public class AdminService implements Admin{
 	@Override
 	public String closeAccount(int accountNo) {
 		
-		for (int i = 0; i < count; i++) {
+		searchAccountByAccountNo(accountNo);
+		
+		
+		return null;
+		
+		/*for (int i = 0; i < count; i++) {
 			if (accountList[i].getAccountNo() == accountNo) {
 				accountList[i] = accountList[count];
+			}
+			else{
+				
 			}
 		}
 		accountList[count-1] = null;
 		count--;
-		//this.searchAccountByAccountNo(accountNo);
 		
-		return "요청한 해지건은 완료되었습니다.";
+		
+		return "요청한 계좌는 없습니다.";*/
 	}
 
 	

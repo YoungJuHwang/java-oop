@@ -6,7 +6,7 @@ import javax.xml.transform.Templates;
 
 public class HanbitOffice {
 	public static void main(String[] args) {
-		AdminService adminService = new AdminService(); //
+		Admin adminService = new AdminService(); // 원래는 adminService였는데 인터페이스 객체 = new 인터페이스 26번째 줄 에러낫엇음.
 		Account2 account2 = new Account2(1000); // 계좌생성 가능수 설정.
 		Scanner scan = new Scanner(System.in);
 	
@@ -23,7 +23,7 @@ public class HanbitOffice {
 				System.out.println("입금액 입력 : ");
 				int restMoney = scan.nextInt();
 				System.out.println(adminService.openAccount(name, restMoney));
-				System.out.println(adminService.getCount());
+				System.out.println(((AdminService) adminService).getCount());
 				break;
 				
 			case 2: 

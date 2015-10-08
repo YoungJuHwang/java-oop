@@ -6,6 +6,7 @@ public class HanbitBank {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
+		
 		Account p1 = new Account();
 		MinusAccount maccount = new MinusAccount();
 		
